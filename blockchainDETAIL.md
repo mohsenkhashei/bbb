@@ -273,23 +273,19 @@ That doesn't make the vision wrong. It just means we're still early."
 
 *[Walk to the center of the stage. Change slide. Take a brief pause before addressing the audience.]*
 
-"Let’s talk about a major engineering limitation of smart contracts that surprises a lot of people.
+"Let’s talk about a major engineering limitation of smart contracts: **Blockchains are completely isolated islands.**
 
-Earlier, I told you that a smart contract is self-executing code. It functions on a strict rule: 'When condition A happens, execute action B.' For example: 'If a flight is delayed by more than two hours, automatically trigger the travel insurance payout.'
+A smart contract running on Ethereum has absolutely no native internet connection. It cannot open a web browser, it cannot ping an airline’s API, and it cannot check the weather feed. It is intentionally cut off from the outside world to guarantee its network security and mathematical predictability.
 
-On paper, that sounds completely flawless. But here is the massive catch that engineers have to grapple with: Blockchains are completely isolated islands. A smart contract running on Ethereum or any other network has absolutely no native internet connection. It cannot open a web browser, it cannot ping an airline’s API, and it cannot check the weather feed. It is intentionally cut off from the outside world to ensure its network security and mathematical predictability.
+So, how does a smart contract actually know if a flight is delayed to trigger an automatic travel insurance payout?
 
-So, how does that smart contract actually know the flight was delayed?
+If you solve this by having a human manually type the flight data into the blockchain, you’ve just reintroduced a centralized middleman. That person can make a mistake, they can lie, or they can be bribed. This is **The Oracle Problem**: *Garbage In, Garbage Out.*
 
-If you solve this by having a human manually type the flight data into the blockchain, you’ve just reintroduced a centralized middleman. That person can make a mistake, they can lie, or they can be bribed. This is famously known as The Oracle Problem. If you put garbage data into a flawless smart contract, you get a garbage outcome.
+To fix this without breaking decentralization, the industry relies on **Decentralized Oracle Networks**.
 
-To fix this without breaking decentralization, the industry relies on Decentralized Oracle Networks.
+An oracle is a secure cryptographic data bridge. Instead of trusting a single computer or a single company, a decentralized oracle network queries multiple independent data sources simultaneously. If nine out of ten data feeds agree that the flight was indeed delayed, the oracle delivers that consensus data to the smart contract, triggering the automatic payout safely.
 
-An oracle is a piece of infrastructure that acts as a secure data bridge. It fetches data from the real world—whether that's weather feeds, stock prices, sports scores, or IoT sensors—and translates it into a format that the blockchain can cryptographically verify.
-
-Instead of trusting a single computer or a single company, a decentralized oracle network queries multiple independent data sources simultaneously. If nine out of ten data feeds agree that the flight was indeed delayed, the oracle delivers that consensus data to the smart contract, triggering the automatic payout safely.
-
-Without oracles, smart contracts are incredibly powerful engines, but they are trapped inside a room with no windows. Oracles are what give these systems eyes and ears, allowing deterministic code to safely interact with a messy, unpredictable real world."
+Without oracles, smart contracts are incredibly powerful engines, but they are trapped inside a room with no windows. Oracles give these systems eyes and ears, allowing deterministic code to safely interact with a messy, unpredictable real world."
 
 ---
 
