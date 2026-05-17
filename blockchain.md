@@ -206,7 +206,7 @@ Or will it remain a niche technology for early adopters and speculators?
 
 1. Blockchain is a trust layer — not just a currency
 2. Smart contracts are programmable agreements that execute themselves
-3. DeFi, interoperability, and Web3 are building a new financial and digital stack
+3. DeFi, Web3, and Oracles are building a new financial and digital stack
 4. The real challenge now is scaling, usability, and regulation
 
 **Final line:**

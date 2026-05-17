@@ -395,9 +395,9 @@ We covered a lot of ground today, so here's what I want you to walk out with:
 
 **Two.** Consensus mechanisms — Proof of Work, Proof of Stake — are what make decentralized agreement possible at scale. This is the engine that runs everything.
 
-**Three.** Smart contracts are programmable agreements that execute themselves. DeFi is what happens when you build an entire financial system from them. It's real, it's growing, and it has real risks.
+**Three.** Smart contracts are programmable agreements that execute themselves. DeFi, Web3, and Oracle networks are building a completely new financial and digital stack on top of them.
 
-**Four.** The biggest unsolved problems right now aren't theoretical — they're practical. How do chains talk to each other? How do we scale to millions of users? How do we make this usable for people who don't have a computer science degree?
+**Four.** The biggest challenges right now are practical: How do we securely connect blockchains to real-world data? How do we scale the network? And how do we make the user experience simple enough for everyday people?
 
 **Five.** The technology exists on a spectrum — from fully decentralized and open, to government-controlled and surveilled. Where it lands will depend on decisions being made by engineers, regulators, and users right now.
 
