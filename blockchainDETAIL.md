@@ -18,7 +18,7 @@
 | Part 2 | How It Actually Works | 7 min |
 | Part 3 | Smart Contracts & DeFi | 8 min |
 | Part 4 | Web3 & What It All Means | 5 min |
-| Part 5 | Interoperability | 5 min |
+| Part 5 | The Oracle Problem | 5 min |
 | Part 6 | Where It's Going | 5 min |
 | Outro | Closing | 3 min |
 | Q&A | Audience Questions | 5–10 min |
@@ -269,59 +269,27 @@ That doesn't make the vision wrong. It just means we're still early."
 
 ---
 
-## Part 5 — Interoperability: How Blockchains Talk to Each Other *(~5 min)*
+## Part 5 — The Oracle Problem: Connecting Code to the Real World *(~5 min)*
 
-"Let me ask you something.
+*[Walk to the center of the stage. Change slide. Take a brief pause before addressing the audience.]*
 
-We've talked about Ethereum. We've mentioned Bitcoin. We've referenced Solana. There are hundreds of blockchains out there. And here's the problem nobody talks about enough:
+"Let’s talk about a major engineering limitation of smart contracts that surprises a lot of people.
 
-**They can't talk to each other.**
+Earlier, I told you that a smart contract is self-executing code. It functions on a strict rule: 'When condition A happens, execute action B.' For example: 'If a flight is delayed by more than two hours, automatically trigger the travel insurance payout.'
 
-Ethereum is its own universe. Bitcoin is its own universe. Solana is its own universe. If you have assets on Ethereum and you want to use an app on Solana, by default — you just can't. They're completely isolated from each other.
+On paper, that sounds completely flawless. But here is the massive catch that engineers have to grapple with: Blockchains are completely isolated islands. A smart contract running on Ethereum or any other network has absolutely no native internet connection. It cannot open a web browser, it cannot ping an airline’s API, and it cannot check the weather feed. It is intentionally cut off from the outside world to ensure its network security and mathematical predictability.
 
-This is called the **walled garden problem**, and it's one of the biggest structural challenges in the blockchain space right now.
+So, how does that smart contract actually know the flight was delayed?
 
-Think about what it would look like if the internet worked this way. If websites on Google's servers couldn't link to websites on Amazon's servers. The whole point of the internet is that everything connects. Blockchain doesn't have that yet — but people are working on it.
+If you solve this by having a human manually type the flight data into the blockchain, you’ve just reintroduced a centralized middleman. That person can make a mistake, they can lie, or they can be bribed. This is famously known as The Oracle Problem. If you put garbage data into a flawless smart contract, you get a garbage outcome.
 
-### Bridges — The First Solution, and Its Dark Side
+To fix this without breaking decentralization, the industry relies on Decentralized Oracle Networks.
 
-The most common current solution is something called a **bridge**.
+An oracle is a piece of infrastructure that acts as a secure data bridge. It fetches data from the real world—whether that's weather feeds, stock prices, sports scores, or IoT sensors—and translates it into a format that the blockchain can cryptographically verify.
 
-Here's how it works. Say you want to move Ethereum tokens to the Solana network. A bridge will lock your tokens in a smart contract on Ethereum — they're still there, just frozen — and then mint a new 'wrapped' version of those tokens on Solana. You can now use them on Solana. When you're done, you send the wrapped tokens back, they're burned, and your original tokens are unlocked.
+Instead of trusting a single computer or a single company, a decentralized oracle network queries multiple independent data sources simultaneously. If nine out of ten data feeds agree that the flight was indeed delayed, the oracle delivers that consensus data to the smart contract, triggering the automatic payout safely.
 
-A good analogy: it's like exchanging currency at an airport. You hand over your euros, you get dollars. The underlying value moves, even though the form changes. Functional — but someone is holding your original money the whole time.
-
-And that's the problem.
-
-Bridges hold enormous amounts of locked funds in a single smart contract. That makes them the number one hack target in all of crypto.
-
-The Ronin Bridge — which supported the game Axie Infinity — lost 625 million dollars in a single attack.
-
-The Wormhole bridge lost 320 million dollars.
-
-These aren't edge cases. Bridge hacks are common, because bridges are high-value targets with complex code.
-
-### Cross-Chain Protocols — The Smarter Approach
-
-The industry has recognized this problem, and newer solutions are emerging that go beyond simple bridges.
-
-Projects like Chainlink's CCIP, LayerZero, and Cosmos's IBC protocol are building what you might call 'messaging layers' between blockchains. Not just moving tokens — but sending data and instructions across chains securely.
-
-The best analogy here is TCP/IP — the underlying protocol that lets any computer on the internet talk to any other computer, regardless of who made it or where it lives.
-
-These cross-chain protocols are trying to build the TCP/IP of blockchain. The infrastructure that makes everything interoperable at a fundamental level.
-
-### The Vision
-
-The end goal is something called **chain abstraction**.
-
-The idea is that a regular user shouldn't need to know what blockchain they're on. Just like you don't know — or care — which server hosts the website you're visiting. You just use the app. The underlying infrastructure handles the rest.
-
-That's where this is heading.
-
-To close this section, I'll leave you with one thought:
-
-The internet won because it connected everything. Blockchain will only reach its potential when all these chains stop operating as isolated islands and start communicating as a unified ecosystem."
+Without oracles, smart contracts are incredibly powerful engines, but they are trapped inside a room with no windows. Oracles are what give these systems eyes and ears, allowing deterministic code to safely interact with a messy, unpredictable real world."
 
 ---
 
