@@ -12,7 +12,7 @@
 | Part 2 | How It Actually Works | 7 min |
 | Part 3 | Smart Contracts & DeFi | 8 min |
 | Part 4 | Web3 & What It All Means | 5 min |
-| Part 5 | Interoperability | 5 min |
+| Part 5 | The Oracle Problem | 5 min |
 | Part 6 | Where It's Going | 5 min |
 | Outro | Closing + Q&A Prep | 3 min |
 | Q&A | Audience Questions | 5–10 min |
@@ -151,55 +151,17 @@ On blockchain, you can do this with money, property, votes, and more.
 
 ---
 
-## Part 5 — Interoperability: How Blockchains Talk to Each Other *(~5 min)*
+## Part 5 — The Oracle Problem: Connecting Code to the Real World *(~5 min)*
 
-> **Goal:** A genuinely "beyond basics" topic most people have never heard explained.
+> **Goal:** Understanding how isolated blockchains get real-world data securely.
 
-### The Walled Garden Problem
-
-> *"We have Ethereum, Solana, Bitcoin, Avalanche… they're all isolated islands. What happens when you need to move value or data between them?"*
-
-Each blockchain is its own universe — different rules, different tokens, no native communication.
-
-This creates fragmentation:
-- Liquidity is split across chains
-- Users get trapped on one ecosystem
-- DApps can't access each other's users
-
-### Bridges — The First Solution (And Its Dark Side)
-
-**How a bridge works:**
-1. Lock your token on Chain A
-2. A "wrapped" version is minted on Chain B
-3. You can now use it on Chain B
-
-**Analogy:** Currency exchange at an airport — functional, but someone is holding your original money.
-
-**The risk:**
-- Bridges hold massive locked funds in a single smart contract
-- This makes them the **#1 hack target in crypto**
-- **Ronin Bridge hack:** $625 million lost
-- **Wormhole hack:** $320 million lost
-
-### Cross-Chain Protocols — The Smarter Approach
-
-Not just moving tokens — moving **data and instructions** across chains.
-
-| Protocol | Approach |
-|----------|----------|
-| **Chainlink CCIP** | Secure cross-chain messaging |
-| **LayerZero** | Omnichain communication layer |
-| **IBC (Cosmos)** | Native inter-blockchain communication |
-
-> Think of it like TCP/IP — the protocol that lets any computer talk to any other computer. These are building the same thing for blockchains.
-
-### The Interoperability Vision
-- A user shouldn't need to know *which* chain they're on
-- Just like you don't know which server hosts a website
-- This is **"chain abstraction"** — the next big UX frontier
-
-**Closing line for this section:**
-> *"The internet won because it connected everything. Blockchain will only win at scale when chains stop competing in isolation and start talking to each other."*
+### Slide Layout & Visual Elements
+- **Title:** Part 5: The Oracle Problem
+- **Key Visual:** A diagram showing a glowing blockchain ecosystem on the left, completely walled off by a barrier from the real world on the right (represented by icons for weather, flight data, and stock markets). A bridge labeled "Decentralized Oracle Network" connects the two sides.
+- **Bullet Points:**
+  - **The Walled Garden:** Why blockchains cannot talk to the internet natively.
+  - **"Garbage In, Garbage Out":** The high risk of centralized data inputs.
+  - **Decentralized Oracles:** Securely translating real-world data into smart contract code.
 
 ---
 
