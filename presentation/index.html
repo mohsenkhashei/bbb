@@ -129,29 +129,27 @@
                     </ul>
                 </section>
                 <section>
-                    <h3>The 3 Pillars</h3>
-                    <table style="font-size: 0.8em;">
-                        <thead>
-                            <tr>
-                                <th>Pillar</th>
-                                <th>What It Means</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="fragment">
-                                <td><strong>Decentralization</strong></td>
-                                <td>No single entity controls it</td>
-                            </tr>
-                            <tr class="fragment">
-                                <td><strong>Immutability</strong></td>
-                                <td>Data written can't be changed</td>
-                            </tr>
-                            <tr class="fragment">
-                                <td><strong>Transparency</strong></td>
-                                <td>Anyone can verify the record</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h3 style="margin-bottom: 25px;">The 3 Pillars</h3>
+                    <div style="display: flex; gap: 20px; justify-content: center; font-size: 0.55em; max-width: 1000px; margin: 0 auto; box-sizing: border-box;">
+                        <!-- Decentralization Card -->
+                        <div class="fragment" style="flex: 1; background: rgba(151, 51, 238, 0.1); border: 1px solid rgba(151, 51, 238, 0.4); border-radius: 12px; padding: 20px; text-align: left; box-shadow: 0 8px 32px rgba(151, 51, 238, 0.15); backdrop-filter: blur(8px);">
+                            <div style="font-size: 2.2em; margin-bottom: 10px; text-align: center;">🟣</div>
+                            <h4 style="color: #c684ff; text-align: center; margin-bottom: 10px; font-size: 1.3em;">Decentralization</h4>
+                            <p style="margin: 0; line-height: 1.4; opacity: 0.9;">No central database or single point of control. The database is shared across a global network of independent nodes, making it completely resilient to censorship or shutdowns.</p>
+                        </div>
+                        <!-- Immutability Card -->
+                        <div class="fragment" style="flex: 1; background: rgba(255, 75, 75, 0.1); border: 1px solid rgba(255, 75, 75, 0.4); border-radius: 12px; padding: 20px; text-align: left; box-shadow: 0 8px 32px rgba(255, 75, 75, 0.15); backdrop-filter: blur(8px);">
+                            <div style="font-size: 2.2em; margin-bottom: 10px; text-align: center;">🔒</div>
+                            <h4 style="color: #ff6b6b; text-align: center; margin-bottom: 10px; font-size: 1.3em;">Immutability</h4>
+                            <p style="margin: 0; line-height: 1.4; opacity: 0.9;">Once data is cryptographically sealed in a block, it cannot be modified, deleted, or backdated. It represents a permanent, unalterable historical record.</p>
+                        </div>
+                        <!-- Transparency Card -->
+                        <div class="fragment" style="flex: 1; background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.4); border-radius: 12px; padding: 20px; text-align: left; box-shadow: 0 8px 32px rgba(0, 242, 254, 0.15); backdrop-filter: blur(8px);">
+                            <div style="font-size: 2.2em; margin-bottom: 10px; text-align: center;">👁️</div>
+                            <h4 style="color: #00f2fe; text-align: center; margin-bottom: 10px; font-size: 1.3em;">Transparency</h4>
+                            <p style="margin: 0; line-height: 1.4; opacity: 0.9;">Every single transaction and state change is globally broadcasted and publicly viewable. Anyone with an internet connection can independently audit and verify the ledger.</p>
+                        </div>
+                    </div>
                 </section>
                 <section>
                     <h3>The Perfect Analogy</h3>
@@ -169,21 +167,40 @@
                     <p>Consensus Mechanisms & Nodes</p>
                 </section>
                 <section>
-                    <h3>Consensus Mechanisms</h3>
-                    <p style="font-size: 0.8em;"><em>How does a network of strangers agree on the truth?</em></p>
-                    <div class="fragment" style="margin-top: 20px;">
-                        <h4>Proof of Work (PoW) 🟠</h4>
-                        <ul style="font-size: 0.7em;">
-                            <li>Miners compete to solve a complex puzzle.</li>
-                            <li>Secure, but energy-intensive (e.g., Bitcoin).</li>
-                        </ul>
-                    </div>
-                    <div class="fragment" style="margin-top: 20px;">
-                        <h4>Proof of Stake (PoS) 🔷</h4>
-                        <ul style="font-size: 0.7em;">
-                            <li>Validators lock up crypto as collateral.</li>
-                            <li>~99.95% less energy than PoW (e.g., Ethereum).</li>
-                        </ul>
+                    <style>
+                        @keyframes rig-pulse {
+                            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(255, 107, 0, 0.4)); }
+                            50% { transform: scale(1.03); filter: drop-shadow(0 0 15px rgba(255, 107, 0, 0.7)); }
+                        }
+                        @keyframes stake-pulse {
+                            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(0, 242, 254, 0.4)); }
+                            50% { transform: scale(1.03); filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.7)); }
+                        }
+                    </style>
+                    <h3>How Consensus Works</h3>
+                    <div style="display: flex; gap: 30px; font-size: 0.55em; max-width: 1000px; margin: 20px auto 0 auto; box-sizing: border-box;">
+                        <!-- PoW Panel -->
+                        <div class="fragment" style="flex: 1; background: rgba(255, 159, 26, 0.05); border: 1px solid rgba(255, 159, 26, 0.3); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: left;">
+                            <div style="width: 55px; height: 55px; border-radius: 50%; background: linear-gradient(135deg, #ff9f1a, #ff3f34); display: flex; justify-content: center; align-items: center; font-size: 1.6em; margin-bottom: 12px; animation: rig-pulse 3s infinite;">🟠</div>
+                            <h4 style="color: #ff9f1a; text-align: center; margin-bottom: 12px; font-size: 1.3em;">Proof of Work (PoW)</h4>
+                            <p style="margin: 0 0 12px 0; opacity: 0.85; line-height: 1.4;">Network consensus achieved through raw computational power.</p>
+                            <ul style="margin: 0; padding-left: 18px; line-height: 1.4;">
+                                <li style="margin-bottom: 8px;"><strong>Competition:</strong> Miners run high-powered computers (GPUs/ASICs) to solve complex cryptographic puzzles first.</li>
+                                <li style="margin-bottom: 8px;"><strong>Security:</strong> Backed by physical energy and hardware costs, making attacks financially ruinous.</li>
+                                <li style="color: #ff3f34;"><strong>Drawback:</strong> High energy footprint (e.g. Bitcoin network).</li>
+                            </ul>
+                        </div>
+                        <!-- PoS Panel -->
+                        <div class="fragment" style="flex: 1; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: left;">
+                            <div style="width: 55px; height: 55px; border-radius: 50%; background: linear-gradient(135deg, #00cdac, #02aab0); display: flex; justify-content: center; align-items: center; font-size: 1.6em; margin-bottom: 12px; animation: stake-pulse 3s infinite;">🔷</div>
+                            <h4 style="color: #00f2fe; text-align: center; margin-bottom: 12px; font-size: 1.3em;">Proof of Stake (PoS)</h4>
+                            <p style="margin: 0 0 12px 0; opacity: 0.85; line-height: 1.4;">Network consensus achieved through capital commitment.</p>
+                            <ul style="margin: 0; padding-left: 18px; line-height: 1.4;">
+                                <li style="margin-bottom: 8px;"><strong>Collateral:</strong> Validators lock up their own cryptocurrency ("stake") to earn the right to verify transactions.</li>
+                                <li style="margin-bottom: 8px;"><strong>Security:</strong> Dishonest validators have their locked collateral permanently seized ("slashed").</li>
+                                <li style="color: #2ed573;"><strong>Advantage:</strong> Uses ~99.95% less energy (e.g. Ethereum network).</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -213,13 +230,61 @@
                     </ul>
                 </section>
                 <section>
-                    <h3>The Vending Machine Analogy</h3>
-                    <blockquote>
-                        "A vending machine is a primitive smart contract, put in money, press button, get item. No
-                        cashier needed."
-                    </blockquote>
-                    <p class="fragment" style="font-size: 0.8em; opacity: 0.8;">On blockchain, you can do this with
-                        money, property, votes, and more.</p>
+                    <style>
+                        @keyframes insert-coin {
+                            0% { transform: translateY(-40px); opacity: 0; }
+                            50% { transform: translateY(0); opacity: 1; }
+                            100% { transform: translateY(30px); opacity: 0; }
+                        }
+                        @keyframes dispense-bottle {
+                            0%, 70% { transform: translateY(0); opacity: 0; }
+                            85% { transform: translateY(35px) rotate(15deg); opacity: 1; }
+                            100% { transform: translateY(35px) rotate(15deg); opacity: 1; }
+                        }
+                    </style>
+                    <h3 style="margin-bottom: 20px;">The Vending Machine Analogy</h3>
+                    <div style="display: flex; align-items: center; justify-content: space-between; gap: 30px; font-size: 0.6em; max-width: 1000px; margin: 0 auto; box-sizing: border-box;">
+                        <div style="width: 55%; text-align: left;">
+                            <blockquote style="margin: 0 0 20px 0; font-size: 1.15em; border-left-color: #00f2fe; padding-left: 15px;">
+                                "A vending machine is a primitive smart contract: put in money, press button, get item. No cashier needed."
+                            </blockquote>
+                            <ul style="margin: 0; padding: 0 0 0 20px; line-height: 1.5;">
+                                <li class="fragment" style="margin-bottom: 10px;"><strong>Deterministic logic:</strong> If money is received AND button is pressed, then release item.</li>
+                                <li class="fragment" style="margin-bottom: 10px;"><strong>No middleman:</strong> The machine executes the transaction directly with you.</li>
+                                <li class="fragment"><strong>Web3 scale:</strong> Blockchain expands this logic to coordinate real estate deeds, loan agreements, governance votes, and financial derivatives.</li>
+                            </ul>
+                        </div>
+                        <div style="width: 45%; position: relative; height: 300px; background: rgba(0,0,0,0.4); border: 1px solid #333; border-radius: 12px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; box-sizing: border-box; overflow: hidden;">
+                            <!-- Vending Machine Box -->
+                            <div style="width: 120px; height: 200px; background: #222; border: 3px solid #00f2fe; border-radius: 8px; position: relative; box-shadow: 0 0 20px rgba(0,242,254,0.2); display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+                                <!-- Coin Slot -->
+                                <div style="position: absolute; right: 12px; top: 35px; width: 6px; height: 18px; background: #ffbd2e; border-radius: 2px;"></div>
+                                <!-- Animated coin -->
+                                <div style="position: absolute; right: 10px; top: 10px; width: 10px; height: 10px; background: #ffbd2e; border-radius: 50%; animation: insert-coin 4s infinite; z-index: 5;"></div>
+                                
+                                <!-- Internal display screen -->
+                                <div style="height: 45px; background: #111; border: 1px solid #333; border-radius: 4px; display: flex; justify-content: center; align-items: center; color: #2ed573; font-family: monospace; font-size: 0.85em; text-shadow: 0 0 5px rgba(46,213,115,0.5);">
+                                    IF $ETH
+                                </div>
+                                
+                                <!-- Buttons grid -->
+                                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 10px 0;">
+                                    <div style="width: 10px; height: 10px; background: #ff5f56; border-radius: 1px;"></div>
+                                    <div style="width: 10px; height: 10px; background: #ffbd2e; border-radius: 1px;"></div>
+                                    <div style="width: 10px; height: 10px; background: #27c93f; border-radius: 1px;"></div>
+                                    <div style="width: 10px; height: 10px; background: #333; border-radius: 1px;"></div>
+                                    <div style="width: 10px; height: 10px; background: #333; border-radius: 1px;"></div>
+                                    <div style="width: 10px; height: 10px; background: #333; border-radius: 1px;"></div>
+                                </div>
+
+                                <!-- Delivery Tray -->
+                                <div style="height: 35px; background: #111; border-top: 2px solid #333; border-radius: 0 0 4px 4px; position: relative;">
+                                    <!-- Dispensed soda/contract bottle -->
+                                    <div style="position: absolute; left: 40%; top: -15px; width: 14px; height: 26px; background: linear-gradient(135deg, #00f2fe, #4facfe); border-radius: 3px; border: 1px solid #fff; display: flex; justify-content: center; align-items: center; font-size: 0.6em; animation: dispense-bottle 4s infinite; z-index: 2;">📄</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section>
                     <h3>DeFi (Decentralized Finance)</h3>
@@ -241,26 +306,45 @@
                     <h2>Part 4: Web3 & What It All Means</h2>
                 </section>
                 <section>
-                    <h3>The Evolution</h3>
-                    <table style="font-size: 0.7em;">
-                        <tbody>
-                            <tr class="fragment">
-                                <td><strong>Web1</strong></td>
-                                <td>Read-only</td>
-                                <td>Static websites</td>
-                            </tr>
-                            <tr class="fragment">
-                                <td><strong>Web2</strong></td>
-                                <td>Read + Write</td>
-                                <td>Companies own your data</td>
-                            </tr>
-                            <tr class="fragment">
-                                <td><strong>Web3</strong></td>
-                                <td>Read + Write + <strong>Own</strong></td>
-                                <td>Wallets, DApps, DAOs</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h3 style="margin-bottom: 25px;">The Internet Evolution</h3>
+                    <div style="display: flex; gap: 20px; justify-content: center; font-size: 0.52em; max-width: 1000px; margin: 0 auto; box-sizing: border-box;">
+                        <!-- Web1 Card -->
+                        <div class="fragment" style="flex: 1; background: rgba(255,255,255,0.03); border: 1px solid #333; border-radius: 12px; padding: 20px; text-align: left; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                    <span style="font-weight: bold; font-size: 1.4em; color: #fff;">Web1</span>
+                                    <span style="font-size: 1.5em;">🌐</span>
+                                </div>
+                                <h4 style="color: #a4b0be; margin-bottom: 10px; font-size: 1.25em;">The Read-Only Web</h4>
+                                <p style="margin: 0; line-height: 1.4; opacity: 0.8;">The static directory. Users were passive consumers reading documents. No interaction, no dynamic accounts.</p>
+                            </div>
+                            <div style="margin-top: 15px; border-top: 1px solid #222; padding-top: 10px; font-style: italic; color: #a4b0be;">Example: Yahoo, Static HTML</div>
+                        </div>
+                        <!-- Web2 Card -->
+                        <div class="fragment" style="flex: 1; background: rgba(255, 95, 86, 0.05); border: 1px solid rgba(255, 95, 86, 0.3); border-radius: 12px; padding: 20px; text-align: left; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                    <span style="font-weight: bold; font-size: 1.4em; color: #ff5f56;">Web2</span>
+                                    <span style="font-size: 1.5em;">📱</span>
+                                </div>
+                                <h4 style="color: #ff5f56; margin-bottom: 10px; font-size: 1.25em;">The Read-Write Web</h4>
+                                <p style="margin: 0; line-height: 1.4; opacity: 0.8;">The interactive platform. Users generate content, connect, and upload media. However, platforms harvest and own all data.</p>
+                            </div>
+                            <div style="margin-top: 15px; border-top: 1px solid rgba(255, 95, 86, 0.1); padding-top: 10px; font-style: italic; color: #ff8a84;">Example: Google, Facebook, YouTube</div>
+                        </div>
+                        <!-- Web3 Card -->
+                        <div class="fragment" style="flex: 1; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 12px; padding: 20px; text-align: left; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                    <span style="font-weight: bold; font-size: 1.4em; color: #00f2fe;">Web3</span>
+                                    <span style="font-size: 1.5em;">🔑</span>
+                                </div>
+                                <h4 style="color: #00f2fe; margin-bottom: 10px; font-size: 1.25em;">The Read-Write-Own Web</h4>
+                                <p style="margin: 0; line-height: 1.4; opacity: 0.8;">The ownership economy. Users own their digital assets, identities, and databases via private keys, independent of platforms.</p>
+                            </div>
+                            <div style="margin-top: 15px; border-top: 1px solid rgba(0, 242, 254, 0.1); padding-top: 10px; font-style: italic; color: #00f2fe;">Example: Uniswap, MakerDAO, Ethereum</div>
+                        </div>
+                    </div>
                 </section>
                 <section>
                     <h3>The Ownership Economy</h3>
