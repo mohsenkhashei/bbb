@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Blockchain Beyond the Basics</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css">
+    <!-- Using a premium dark theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/night.min.css">
+    
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+            background: -webkit-linear-gradient(#4facfe, #00f2fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .reveal blockquote {
+            border-left: 5px solid #00f2fe;
+            padding: 10px 20px;
+            font-style: italic;
+            background: rgba(0, 242, 254, 0.1);
+        }
+        .fragment.fade-up {
+            transition: all 0.5s ease;
+        }
+        /* Make lists look cleaner */
+        .reveal ul {
+            list-style-type: square;
+        }
+        .reveal li {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Title Slide -->
+            <section data-auto-animate>
+                <h1>Blockchain</h1>
+                <h3>Beyond the Basics</h3>
+                <p>A 40-Minute Presentation</p>
+                <p style="font-size: 0.5em; margin-top: 50px; opacity: 0.7;">Presentation by You</p>
+            </section>
+
+            <!-- Hook -->
+            <section data-auto-animate>
+                <h2>The Opening Hook</h2>
+                <blockquote class="fragment fade-up">
+                    "How many of you have actually used blockchain without knowing it?"
+                </blockquote>
+                <p class="fragment fade-up" style="font-size: 0.8em; opacity: 0.9;">Every time someone sends crypto, uses a Web3 game, or interacts with a digital wallet — they touched this technology.</p>
+                <blockquote class="fragment fade-up" style="border-left-color: #4facfe;">
+                    "Today we're going to go past the buzzwords. By the end of this, you'll understand not just what blockchain is — but how it works, where it's real, and where it's going."
+                </blockquote>
+            </section>
+
+            <!-- Part 1 -->
+            <section>
+                <section>
+                    <h2>Part 1: Quick Basics Refresh</h2>
+                    <p>The Core Problem Blockchain Solves</p>
+                </section>
+                <section>
+                    <h3>The Middleman Problem</h3>
+                    <ul>
+                        <li class="fragment">How do two strangers trust each other without a middleman?</li>
+                        <li class="fragment">Banks, notaries, PayPal — all middlemen we rely on for trust.</li>
+                        <li class="fragment highlight-blue">Blockchain removes the middleman by making trust <strong>mathematical and public</strong>.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>The 3 Pillars</h3>
+                    <table style="font-size: 0.8em;">
+                        <thead>
+                            <tr><th>Pillar</th><th>What It Means</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr class="fragment"><td><strong>Decentralization</strong></td><td>No single entity controls it</td></tr>
+                            <tr class="fragment"><td><strong>Immutability</strong></td><td>Data written can't be changed</td></tr>
+                            <tr class="fragment"><td><strong>Transparency</strong></td><td>Anyone can verify the record</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>The Perfect Analogy</h3>
+                    <blockquote class="fragment fade-in-then-semi-out">
+                        "Think of a Google Doc everyone can read, but nobody can edit once it's saved — and there's no Google company running it."
+                    </blockquote>
+                </section>
+            </section>
+
+            <!-- Part 2 -->
+            <section>
+                <section>
+                    <h2>Part 2: How It Actually Works</h2>
+                    <p>Consensus Mechanisms & Nodes</p>
+                </section>
+                <section>
+                    <h3>Consensus Mechanisms</h3>
+                    <p style="font-size: 0.8em;"><em>How does a network of strangers agree on the truth?</em></p>
+                    <div class="fragment" style="margin-top: 20px;">
+                        <h4>Proof of Work (PoW) 🟠</h4>
+                        <ul style="font-size: 0.7em;">
+                            <li>Miners compete to solve a complex puzzle.</li>
+                            <li>Secure, but energy-intensive (e.g., Bitcoin).</li>
+                        </ul>
+                    </div>
+                    <div class="fragment" style="margin-top: 20px;">
+                        <h4>Proof of Stake (PoS) 🔷</h4>
+                        <ul style="font-size: 0.7em;">
+                            <li>Validators lock up crypto as collateral.</li>
+                            <li>~99.95% less energy than PoW (e.g., Ethereum).</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h3>Nodes & Validators</h3>
+                    <ul>
+                        <li class="fragment fade-up"><strong>Nodes:</strong> Computers that store a copy of the blockchain.</li>
+                        <li class="fragment fade-up">The more nodes, the harder it is to attack or manipulate.</li>
+                        <li class="fragment fade-up" style="color: #00f2fe; font-weight: bold;">This is what "decentralized" actually means in practice.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Part 3 -->
+            <section>
+                <section>
+                    <h2>Part 3: Smart Contracts & DeFi</h2>
+                </section>
+                <section>
+                    <h3>What Is a Smart Contract?</h3>
+                    <ul style="font-size: 0.8em;">
+                        <li class="fragment">Code that lives on the blockchain and <strong>executes itself</strong> when conditions are met.</li>
+                        <li class="fragment">No lawyer, no bank, no middleman.</li>
+                        <li class="fragment">Once deployed: permanent and unstoppable.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>The Vending Machine Analogy</h3>
+                    <blockquote>
+                        "A vending machine is a primitive smart contract — put in money, press button, get item. No cashier needed."
+                    </blockquote>
+                    <p class="fragment" style="font-size: 0.8em; opacity: 0.8;">On blockchain, you can do this with money, property, votes, and more.</p>
+                </section>
+                <section>
+                    <h3>DeFi (Decentralized Finance)</h3>
+                    <ul>
+                        <li class="fragment">Financial services with no company behind them.</li>
+                        <li class="fragment">Example: <strong>Uniswap</strong>
+                            <ul style="font-size: 0.8em;">
+                                <li>Fully functioning cryptocurrency exchange.</li>
+                                <li>No employees, no HQ, no CEO.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Part 4 -->
+            <section>
+                <section>
+                    <h2>Part 4: Interoperability</h2>
+                    <p>How Blockchains Talk to Each Other</p>
+                </section>
+                <section>
+                    <h3>The Walled Garden Problem</h3>
+                    <blockquote>
+                        "We have Ethereum, Solana, Bitcoin, Avalanche… they're all isolated islands. What happens when you need to move value or data between them?"
+                    </blockquote>
+                </section>
+                <section>
+                    <h3>Bridges vs Protocols</h3>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.7em;">
+                        <div class="fragment" style="width: 48%; background: rgba(255,100,100,0.1); padding: 10px; border-radius: 10px; border: 1px solid rgba(255,100,100,0.3);">
+                            <h4 style="color: #ff6b6b;">Bridges ⚠️</h4>
+                            <ul>
+                                <li>Lock tokens on Chain A, mint wrapped on Chain B.</li>
+                                <li>Massive locked funds make them the #1 hack target.</li>
+                            </ul>
+                        </div>
+                        <div class="fragment" style="width: 48%; background: rgba(100,255,100,0.1); padding: 10px; border-radius: 10px; border: 1px solid rgba(100,255,100,0.3);">
+                            <h4 style="color: #4cd137;">Protocols 🌐</h4>
+                            <ul>
+                                <li>Moving data and instructions, not just tokens.</li>
+                                <li>Think of it like TCP/IP for blockchains (e.g., Chainlink CCIP).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Part 5 -->
+            <section>
+                <section>
+                    <h2>Part 5: Web3 & What It All Means</h2>
+                </section>
+                <section>
+                    <h3>The Evolution</h3>
+                    <table style="font-size: 0.7em;">
+                        <tbody>
+                            <tr class="fragment"><td><strong>Web1</strong></td><td>Read-only</td><td>Static websites</td></tr>
+                            <tr class="fragment"><td><strong>Web2</strong></td><td>Read + Write</td><td>Companies own your data</td></tr>
+                            <tr class="fragment"><td><strong>Web3</strong></td><td>Read + Write + <strong>Own</strong></td><td>Wallets, DApps, DAOs</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>The Ownership Economy</h3>
+                    <ul>
+                        <li class="fragment">In Web2: you create content, the platform profits.</li>
+                        <li class="fragment">In Web3: users own their data, identity, and digital assets.</li>
+                        <li class="fragment" style="color:#00f2fe;">Your wallet = your universal login and ownership record.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Part 6 -->
+            <section>
+                <section>
+                    <h2>Part 6: Where It's Going</h2>
+                </section>
+                <section>
+                    <h3>The Future Stack</h3>
+                    <ul style="font-size: 0.8em;">
+                        <li class="fragment"><strong>Layer 2s:</strong> Solving scalability (Arbitrum, Optimism). 10-100x faster and cheaper.</li>
+                        <li class="fragment"><strong>AI + Blockchain:</strong> Verifiable data provenance, agent economies, decentralized compute.</li>
+                        <li class="fragment"><strong>CBDCs:</strong> Governments building their own chains.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>The Big Open Question</h3>
+                    <blockquote>
+                        "Will blockchain become invisible infrastructure — like TCP/IP — something everyone uses but nobody thinks about?"
+                    </blockquote>
+                    <p class="fragment" style="font-size: 0.8em; opacity: 0.8;">Or will it remain a niche technology for early adopters?</p>
+                </section>
+            </section>
+
+            <!-- Outro -->
+            <section>
+                <section>
+                    <h2>Closing Takeaways</h2>
+                    <ol style="font-size: 0.8em;">
+                        <li class="fragment">Blockchain is a trust layer — not just a currency.</li>
+                        <li class="fragment">Smart contracts are programmable, self-executing agreements.</li>
+                        <li class="fragment">DeFi, interoperability, and Web3 are building a new digital stack.</li>
+                    </ol>
+                </section>
+                <section>
+                    <blockquote style="font-size: 0.9em;">
+                        "The technology is real. The hype is loud. The interesting question isn't 'is blockchain a thing' — it's 'which parts of it will actually change how we live.' That's still being written."
+                    </blockquote>
+                </section>
+            </section>
+            
+            <section>
+                <h1>Q&A</h1>
+                <p>Thank you!</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'convex',
+            backgroundTransition: 'fade',
+            center: true,
+            margin: 0.1
+        });
+    </script>
+</body>
+</html>
