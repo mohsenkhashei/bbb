@@ -13,7 +13,7 @@
 | Part 3 | Smart Contracts & DeFi | 8 min |
 | Part 4 | Web3 & What It All Means | 5 min |
 | Part 5 | The Oracle Problem | 5 min |
-| Part 6 | Where It's Going | 5 min |
+| Part 6 | AI & Cryptography | 5 min |
 | Outro | Closing + Q&A Prep | 3 min |
 | Q&A | Audience Questions | 5–10 min |
 
@@ -163,40 +163,17 @@ On blockchain, you can do this with money, property, votes, and more.
   - **"Garbage In, Garbage Out":** The high risk of centralized data inputs.
   - **Decentralized Oracles:** Securely translating real-world data into smart contract code.
 
----
+## Part 6 — The Convergence of AI and Cryptography *(~5 min)*
 
-## Part 6 — Where It's Going *(~5 min)*
+> **Goal:** Explore how artificial intelligence and blockchain technology merge to solve modern technical challenges.
 
-> **Goal:** End on something forward-looking — audiences love this.
-
-### Layer 2s — Solving the Scalability Problem
-- Ethereum mainnet = slow and expensive under load
-- **Layer 2s** process transactions off the main chain, then post results back
-- Examples: **Arbitrum, Optimism, Base, zkSync**
-- Result: 10–100x faster, 10–100x cheaper
-- This is what makes blockchain usable for everyday apps
-
-### AI + Blockchain — An Emerging Intersection
-- **Verifiable data provenance** — proving AI outputs are authentic and untampered
-- **Agent economies** — AI agents transacting autonomously on-chain
-- **Decentralized compute** — renting GPU power via blockchain (Render, Akash)
-- The combination is early but the potential is significant
-
-### CBDCs — Governments Building Their Own Chains
-- **Central Bank Digital Currency** — a government-issued digital currency on a blockchain
-- Adopted or in development by 100+ countries
-- Why it's controversial:
-  - Full transaction visibility for governments
-  - Programmable money (can be restricted or expire)
-  - Conflicts with the "decentralization" ethos of crypto
-
-### The Big Open Question
-
-> *"Will blockchain become invisible infrastructure — like TCP/IP — something everyone uses but nobody thinks about?"*
-
-Or will it remain a niche technology for early adopters and speculators?
-
-**The honest answer:** We don't know yet. But the building blocks are being laid right now.
+### Slide Layout & Visual Elements
+- **Title:** Part 6: The Convergence of AI and Cryptography
+- **Key Visual:** A brain icon (AI) connected via a digital handshake to a padlock/chain icon (Blockchain).
+- **Bullet Points:**
+  - **Verifiable Provenance:** Fighting deepfakes and certifying data history
+  - **Autonomous Agents:** Giving AI systems their own native economic rails
+  - **Decentralized Compute:** Crowdsourcing GPU power on-chain
 
 ---
 
