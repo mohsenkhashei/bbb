@@ -52,11 +52,22 @@
             </section>
 
             <!-- Who Am I -->
-            <section data-auto-animate>
-                <h2 style="font-size: 2.2em; margin-bottom: 30px;">I'm Mohsen Khashei</h2>
-                <p class="fragment fade-up" style="font-size: 1.3em; line-height: 1.6; font-weight: 300;">
-                    A <strong style="color: #4facfe;">Software Engineer</strong> who turns ambitious, complex concepts into <strong style="color: #00f2fe;">production-ready, intelligent solutions</strong>.
-                </p>
+            <section>
+                <h2 style="font-size: 2.2em; margin-bottom: 40px;">I'm Mohsen Khashei</h2>
+                <div style="background: #111; padding: 25px; border-radius: 8px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: left; font-family: 'Courier New', Courier, monospace; font-size: 0.85em; color: #0f0; max-width: 850px; margin: 0 auto; min-height: 120px; line-height: 1.5;">
+                    <div style="display: flex; gap: 8px; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px;">
+                        <span style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></span>
+                        <span style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></span>
+                        <span style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f;"></span>
+                    </div>
+                    <div>
+                        <span style="color: #4facfe;">mohsen@macbook</span><span style="color: #fff;">:</span><span style="color: #00f2fe;">~</span><span style="color: #fff;">$</span> 
+                        <span id="terminal-text"></span><span style="animation: blink 1s step-end infinite;">_</span>
+                    </div>
+                </div>
+                <style>
+                    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+                </style>
             </section>
 
             <!-- Title Slide -->
@@ -295,6 +306,26 @@
             center: true,
             margin: 0.1
         });
+
+        function runTypingEffect(slide) {
+            const terminalEl = slide.querySelector('#terminal-text');
+            if(terminalEl) {
+                const text = "A Software Engineer who turns ambitious, complex concepts into production-ready, intelligent solutions.";
+                terminalEl.innerHTML = '';
+                let i = 0;
+                const typeWriter = () => {
+                    if (i < text.length) {
+                        terminalEl.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, Math.random() * 40 + 20);
+                    }
+                };
+                setTimeout(typeWriter, 500);
+            }
+        }
+        
+        Reveal.on('slidechanged', event => runTypingEffect(event.currentSlide));
+        Reveal.on('ready', event => runTypingEffect(event.currentSlide));
     </script>
 </body>
 </html>
