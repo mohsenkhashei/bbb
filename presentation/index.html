@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -10,39 +11,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css">
     <!-- Using a premium dark theme -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/night.min.css">
-    
+
     <style>
-        .reveal h1, .reveal h2, .reveal h3 {
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
             text-transform: none;
             background: -webkit-linear-gradient(#4facfe, #00f2fe);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .reveal blockquote {
             border-left: 5px solid #00f2fe;
             padding: 10px 20px;
             font-style: italic;
             background: rgba(0, 242, 254, 0.1);
         }
+
         .fragment.fade-up {
             transition: all 0.5s ease;
         }
+
         /* Make lists look cleaner */
         .reveal ul {
             list-style-type: square;
         }
+
         .reveal li {
             margin-bottom: 15px;
         }
     </style>
 </head>
+
 <body>
     <div class="reveal">
         <div class="slides">
 
             <!-- Opening Quote -->
             <section data-auto-animate>
-                <blockquote style="border: none; background: none; font-size: 1.6em; line-height: 1.4; font-weight: 300;">
+                <blockquote
+                    style="border: none; background: none; font-size: 1.6em; line-height: 1.4; font-weight: 300;">
                     <span style="color: #4facfe; font-size: 2em; line-height: 0;">"</span><br>
                     If it's not complex, it's just maintenance.<br>
                     If it's impossible,<br>
@@ -53,19 +62,33 @@
             <!-- Who Am I -->
             <section>
                 <h2 style="font-size: 2.2em; margin-bottom: 40px;">I'm Mohsen Khashei</h2>
-                <div id="terminal-window" class="fragment fade-up" style="background: #111; padding: 25px; border-radius: 8px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: left; font-family: 'Courier New', Courier, monospace; font-size: 0.85em; color: #fff; max-width: 850px; margin: 0 auto; min-height: 120px; line-height: 1.5;">
-                    <div style="display: flex; gap: 8px; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px;">
+                <div id="terminal-window" class="fragment fade-up"
+                    style="background: #111; padding: 25px; border-radius: 8px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: left; font-family: 'Courier New', Courier, monospace; font-size: 0.85em; color: #fff; max-width: 850px; margin: 0 auto; min-height: 120px; line-height: 1.5;">
+                    <div
+                        style="display: flex; gap: 8px; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px;">
                         <span style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></span>
                         <span style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></span>
                         <span style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f;"></span>
                     </div>
                     <div>
-                        <span style="color: #fff;">[</span><span style="color: #4facfe;">mohsen@macbook</span><span style="color: #fff;">:</span><span style="color: #00f2fe;">~</span><span style="color: #fff;">]$</span> 
+                        <span style="color: #fff;">[</span><span style="color: #4facfe;">mohsen@macbook</span><span
+                            style="color: #fff;">:</span><span style="color: #00f2fe;">~</span><span
+                            style="color: #fff;">]$</span>
                         <span id="terminal-text"></span><span style="animation: blink 1s step-end infinite;">_</span>
                     </div>
                 </div>
                 <style>
-                    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+                    @keyframes blink {
+
+                        0%,
+                        100% {
+                            opacity: 1;
+                        }
+
+                        50% {
+                            opacity: 0;
+                        }
+                    }
                 </style>
             </section>
 
@@ -81,9 +104,12 @@
                 <blockquote class="fragment fade-up">
                     "How many of you have actually used blockchain without knowing it?"
                 </blockquote>
-                <p class="fragment fade-up" style="font-size: 0.8em; opacity: 0.9;">Maybe you sent someone crypto once. Maybe you bought a game item that lived in a wallet. Maybe a friend showed you an NFT, or you signed up for something that used a digital wallet login. Maybe you've never touched any of it.</p>
+                <p class="fragment fade-up" style="font-size: 0.8em; opacity: 0.9;">Maybe you sent someone crypto once.
+                    Maybe you bought a game item that lived in a wallet. Maybe a friend showed you an NFT, or you signed
+                    up for something that used a digital wallet login.</p>
                 <blockquote class="fragment fade-up" style="border-left-color: #4facfe;">
-                    "Today we're going to go past the buzzwords. By the end of this, you'll understand not just what blockchain is, but how it works, where it's real, and where it's going."
+                    "Today we're going to go past the buzzwords. By the end of this, you'll understand not just what
+                    blockchain is, but how it works, where it's real, and where it's going."
                 </blockquote>
             </section>
 
@@ -98,26 +124,40 @@
                     <ul>
                         <li class="fragment">How do two strangers trust each other without a middleman?</li>
                         <li class="fragment">Banks, notaries, PayPal, all middlemen we rely on for trust.</li>
-                        <li class="fragment">Blockchain removes the middleman by making trust <strong style="color: #00f2fe;">mathematical and public</strong>.</li>
+                        <li class="fragment">Blockchain removes the middleman by making trust <strong
+                                style="color: #00f2fe;">mathematical and public</strong>.</li>
                     </ul>
                 </section>
                 <section>
                     <h3>The 3 Pillars</h3>
                     <table style="font-size: 0.8em;">
                         <thead>
-                            <tr><th>Pillar</th><th>What It Means</th></tr>
+                            <tr>
+                                <th>Pillar</th>
+                                <th>What It Means</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr class="fragment"><td><strong>Decentralization</strong></td><td>No single entity controls it</td></tr>
-                            <tr class="fragment"><td><strong>Immutability</strong></td><td>Data written can't be changed</td></tr>
-                            <tr class="fragment"><td><strong>Transparency</strong></td><td>Anyone can verify the record</td></tr>
+                            <tr class="fragment">
+                                <td><strong>Decentralization</strong></td>
+                                <td>No single entity controls it</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><strong>Immutability</strong></td>
+                                <td>Data written can't be changed</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><strong>Transparency</strong></td>
+                                <td>Anyone can verify the record</td>
+                            </tr>
                         </tbody>
                     </table>
                 </section>
                 <section>
                     <h3>The Perfect Analogy</h3>
                     <blockquote class="fragment fade-in-then-semi-out">
-                        "Think of a Google Doc everyone can read, but nobody can edit once it's saved, and there's no Google company running it."
+                        "Think of a Google Doc everyone can read, but nobody can edit once it's saved, and there's no
+                        Google company running it."
                     </blockquote>
                 </section>
             </section>
@@ -149,9 +189,11 @@
                 <section>
                     <h3>Nodes & Validators</h3>
                     <ul>
-                        <li class="fragment fade-up"><strong>Nodes:</strong> Computers that store a copy of the blockchain.</li>
+                        <li class="fragment fade-up"><strong>Nodes:</strong> Computers that store a copy of the
+                            blockchain.</li>
                         <li class="fragment fade-up">The more nodes, the harder it is to attack or manipulate.</li>
-                        <li class="fragment fade-up" style="color: #00f2fe; font-weight: bold;">This is what "decentralized" actually means in practice.</li>
+                        <li class="fragment fade-up" style="color: #00f2fe; font-weight: bold;">This is what
+                            "decentralized" actually means in practice.</li>
                     </ul>
                 </section>
             </section>
@@ -164,7 +206,8 @@
                 <section>
                     <h3>What Is a Smart Contract?</h3>
                     <ul style="font-size: 0.8em;">
-                        <li class="fragment">Code that lives on the blockchain and <strong>executes itself</strong> when conditions are met.</li>
+                        <li class="fragment">Code that lives on the blockchain and <strong>executes itself</strong> when
+                            conditions are met.</li>
                         <li class="fragment">No lawyer, no bank, no middleman.</li>
                         <li class="fragment">Once deployed: permanent and unstoppable.</li>
                     </ul>
@@ -172,9 +215,11 @@
                 <section>
                     <h3>The Vending Machine Analogy</h3>
                     <blockquote>
-                        "A vending machine is a primitive smart contract, put in money, press button, get item. No cashier needed."
+                        "A vending machine is a primitive smart contract, put in money, press button, get item. No
+                        cashier needed."
                     </blockquote>
-                    <p class="fragment" style="font-size: 0.8em; opacity: 0.8;">On blockchain, you can do this with money, property, votes, and more.</p>
+                    <p class="fragment" style="font-size: 0.8em; opacity: 0.8;">On blockchain, you can do this with
+                        money, property, votes, and more.</p>
                 </section>
                 <section>
                     <h3>DeFi (Decentralized Finance)</h3>
@@ -199,20 +244,23 @@
                 <section>
                     <h3>The Walled Garden Problem</h3>
                     <blockquote>
-                        "We have Ethereum, Solana, Bitcoin, Avalanche… they're all isolated islands. What happens when you need to move value or data between them?"
+                        "We have Ethereum, Solana, Bitcoin, Avalanche… they're all isolated islands. What happens when
+                        you need to move value or data between them?"
                     </blockquote>
                 </section>
                 <section>
                     <h3>Bridges vs Protocols</h3>
                     <div style="display: flex; justify-content: space-between; font-size: 0.7em;">
-                        <div class="fragment" style="width: 48%; background: rgba(255,100,100,0.1); padding: 10px; border-radius: 10px; border: 1px solid rgba(255,100,100,0.3);">
+                        <div class="fragment"
+                            style="width: 48%; background: rgba(255,100,100,0.1); padding: 10px; border-radius: 10px; border: 1px solid rgba(255,100,100,0.3);">
                             <h4 style="color: #ff6b6b;">Bridges ⚠️</h4>
                             <ul>
                                 <li>Lock tokens on Chain A, mint wrapped on Chain B.</li>
                                 <li>Massive locked funds make them the #1 hack target.</li>
                             </ul>
                         </div>
-                        <div class="fragment" style="width: 48%; background: rgba(100,255,100,0.1); padding: 10px; border-radius: 10px; border: 1px solid rgba(100,255,100,0.3);">
+                        <div class="fragment"
+                            style="width: 48%; background: rgba(100,255,100,0.1); padding: 10px; border-radius: 10px; border: 1px solid rgba(100,255,100,0.3);">
                             <h4 style="color: #4cd137;">Protocols 🌐</h4>
                             <ul>
                                 <li>Moving data and instructions, not just tokens.</li>
@@ -232,9 +280,21 @@
                     <h3>The Evolution</h3>
                     <table style="font-size: 0.7em;">
                         <tbody>
-                            <tr class="fragment"><td><strong>Web1</strong></td><td>Read-only</td><td>Static websites</td></tr>
-                            <tr class="fragment"><td><strong>Web2</strong></td><td>Read + Write</td><td>Companies own your data</td></tr>
-                            <tr class="fragment"><td><strong>Web3</strong></td><td>Read + Write + <strong>Own</strong></td><td>Wallets, DApps, DAOs</td></tr>
+                            <tr class="fragment">
+                                <td><strong>Web1</strong></td>
+                                <td>Read-only</td>
+                                <td>Static websites</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><strong>Web2</strong></td>
+                                <td>Read + Write</td>
+                                <td>Companies own your data</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><strong>Web3</strong></td>
+                                <td>Read + Write + <strong>Own</strong></td>
+                                <td>Wallets, DApps, DAOs</td>
+                            </tr>
                         </tbody>
                     </table>
                 </section>
@@ -243,7 +303,8 @@
                     <ul>
                         <li class="fragment">In Web2: you create content, the platform profits.</li>
                         <li class="fragment">In Web3: users own their data, identity, and digital assets.</li>
-                        <li class="fragment" style="color:#00f2fe;">Your wallet = your universal login and ownership record.</li>
+                        <li class="fragment" style="color:#00f2fe;">Your wallet = your universal login and ownership
+                            record.</li>
                     </ul>
                 </section>
             </section>
@@ -256,17 +317,21 @@
                 <section>
                     <h3>The Future Stack</h3>
                     <ul style="font-size: 0.8em;">
-                        <li class="fragment"><strong>Layer 2s:</strong> Solving scalability (Arbitrum, Optimism). 10-100x faster and cheaper.</li>
-                        <li class="fragment"><strong>AI + Blockchain:</strong> Verifiable data provenance, agent economies, decentralized compute.</li>
+                        <li class="fragment"><strong>Layer 2s:</strong> Solving scalability (Arbitrum, Optimism).
+                            10-100x faster and cheaper.</li>
+                        <li class="fragment"><strong>AI + Blockchain:</strong> Verifiable data provenance, agent
+                            economies, decentralized compute.</li>
                         <li class="fragment"><strong>CBDCs:</strong> Governments building their own chains.</li>
                     </ul>
                 </section>
                 <section>
                     <h3>The Big Open Question</h3>
                     <blockquote>
-                        "Will blockchain become invisible infrastructure, like TCP/IP, something everyone uses but nobody thinks about?"
+                        "Will blockchain become invisible infrastructure, like TCP/IP, something everyone uses but
+                        nobody thinks about?"
                     </blockquote>
-                    <p class="fragment" style="font-size: 0.8em; opacity: 0.8;">Or will it remain a niche technology for early adopters?</p>
+                    <p class="fragment" style="font-size: 0.8em; opacity: 0.8;">Or will it remain a niche technology for
+                        early adopters?</p>
                 </section>
             </section>
 
@@ -282,14 +347,24 @@
                 </section>
                 <section>
                     <blockquote style="font-size: 0.9em;">
-                        "The technology is real. The hype is loud. The interesting question isn't 'is blockchain a thing', it's 'which parts of it will actually change how we live.' That's still being written."
+                        "The technology is real. The hype is loud. The interesting question isn't 'is blockchain a
+                        thing', it's 'which parts of it will actually change how we live.' That's still being written."
                     </blockquote>
                 </section>
             </section>
-            
+
             <section>
                 <h1>Q&A</h1>
                 <p>Thank you!</p>
+            </section>
+
+            <section>
+                <h3 style="font-size: 1.5em; margin-bottom: 40px;">You can access the slides at this address:</h3>
+                <p style="font-size: 1.1em; margin-top: 30px;">
+                    <a href="https://mohsenkhashei.github.io/bbb/presentation" target="_blank" style="color: #00f2fe; text-shadow: 0 0 15px rgba(0, 242, 254, 0.4); border-bottom: 2px solid #00f2fe; padding-bottom: 8px; text-decoration: none;">
+                        mohsenkhashei.github.io/bbb/presentation
+                    </a>
+                </p>
             </section>
 
         </div>
@@ -306,14 +381,14 @@
         });
 
         function runTypingEffect(terminalEl) {
-            if(terminalEl) {
+            if (terminalEl) {
                 const text = "A Software Engineer who turns ambitious, complex concepts into production-ready, intelligent solutions.";
                 terminalEl.innerHTML = '';
                 let i = 0;
-                
+
                 // Clear any existing typing timeout to prevent overlapping text
                 if (window.typingTimeout) clearTimeout(window.typingTimeout);
-                
+
                 const typeWriter = () => {
                     if (i < text.length) {
                         terminalEl.innerHTML += text.charAt(i);
@@ -324,7 +399,7 @@
                 window.typingTimeout = setTimeout(typeWriter, 500);
             }
         }
-        
+
         Reveal.on('fragmentshown', event => {
             if (event.fragment.id === 'terminal-window') {
                 const terminalEl = event.fragment.querySelector('#terminal-text');
@@ -351,4 +426,5 @@
         });
     </script>
 </body>
+
 </html>
