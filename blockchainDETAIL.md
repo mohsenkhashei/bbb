@@ -309,15 +309,13 @@ AI is the engine of our digital future, but cryptography and blockchain are the 
 
 We covered a lot of ground today, so here's what I want you to walk out with:
 
-**One.** Blockchain is fundamentally a trust layer — not just a currency. It's infrastructure for recording truth without a central authority.
+**One.** Blockchain is fundamentally a trust layer, not just a currency. It is a new technical paradigm for establishing truth and coordinate without central intermediaries.
 
-**Two.** Consensus mechanisms — Proof of Work, Proof of Stake — are what make decentralized agreement possible at scale. This is the engine that runs everything.
+**Two.** Smart contracts, DeFi, and Decentralized Oracles are building a highly secure, self-executing stack that connects flawless code to real-world data.
 
-**Three.** Smart contracts are programmable agreements that execute themselves. DeFi, Web3, and Oracle networks are building a completely new financial and digital stack on top of them.
+**Three.** The convergence of AI and Cryptography is the new frontier. Blockchain provides the ultimate trust and economic rails for autonomous AI agents.
 
-**Four.** The biggest challenges right now are practical: How do we securely connect blockchains to real-world data? How do we scale the network? And how do we make the user experience simple enough for everyday people?
-
-**Five.** The technology exists on a spectrum — from fully decentralized and open, to government-controlled and surveilled. Where it lands will depend on decisions being made by engineers, regulators, and users right now.
+**Four.** The immediate hurdles are entirely practical: improving the user experience, scaling the network, and establishing sensible regulation.
 
 *[Pause. Slow down for the final line.]*
 

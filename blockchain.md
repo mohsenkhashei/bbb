@@ -169,11 +169,9 @@ On blockchain, you can do this with money, property, votes, and more.
 
 ### Slide Layout & Visual Elements
 - **Title:** Part 6: The Convergence of AI and Cryptography
-- **Key Visual:** A brain icon (AI) connected via a digital handshake to a padlock/chain icon (Blockchain).
 - **Bullet Points:**
   - **Verifiable Provenance:** Fighting deepfakes and certifying data history
   - **Autonomous Agents:** Giving AI systems their own native economic rails
-  - **Decentralized Compute:** Crowdsourcing GPU power on-chain
 
 ---
 
@@ -181,10 +179,10 @@ On blockchain, you can do this with money, property, votes, and more.
 
 **Wrap up with your key takeaways:**
 
-1. Blockchain is a trust layer — not just a currency
-2. Smart contracts are programmable agreements that execute themselves
-3. DeFi, Web3, and Oracles are building a new financial and digital stack
-4. The real challenge now is scaling, usability, and regulation
+1. **Trust Infrastructure:** Blockchain is fundamentally a trust layer, not just a currency.
+2. **The Secure Stack:** Smart contracts, DeFi, and Oracles build a secure, self-executing digital ecosystem.
+3. **AI + Cryptography:** Blockchain provides the ultimate trust and economic rails for autonomous AI agents.
+4. **The Real Challenge:** The immediate hurdle is usability, scaling, and sensible regulation.
 
 **Final line:**
 > *"The technology is real. The hype is loud. The interesting question isn't 'is blockchain a thing' — it's 'which parts of it will actually change how we live.' That's still being written."*
