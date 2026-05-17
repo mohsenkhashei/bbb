@@ -313,14 +313,18 @@
                 const text = "A Software Engineer who turns ambitious, complex concepts into production-ready, intelligent solutions.";
                 terminalEl.innerHTML = '';
                 let i = 0;
+                
+                // Clear any existing typing timeout to prevent overlapping text
+                if (window.typingTimeout) clearTimeout(window.typingTimeout);
+                
                 const typeWriter = () => {
                     if (i < text.length) {
                         terminalEl.innerHTML += text.charAt(i);
                         i++;
-                        setTimeout(typeWriter, Math.random() * 40 + 20);
+                        window.typingTimeout = setTimeout(typeWriter, Math.random() * 40 + 20);
                     }
                 };
-                setTimeout(typeWriter, 500);
+                window.typingTimeout = setTimeout(typeWriter, 500);
             }
         }
         
