@@ -54,7 +54,7 @@
             <!-- Who Am I -->
             <section>
                 <h2 style="font-size: 2.2em; margin-bottom: 40px;">I'm Mohsen Khashei</h2>
-                <div style="background: #111; padding: 25px; border-radius: 8px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: left; font-family: 'Courier New', Courier, monospace; font-size: 0.85em; color: #fff; max-width: 850px; margin: 0 auto; min-height: 120px; line-height: 1.5;">
+                <div id="terminal-window" class="fragment fade-up" style="background: #111; padding: 25px; border-radius: 8px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: left; font-family: 'Courier New', Courier, monospace; font-size: 0.85em; color: #fff; max-width: 850px; margin: 0 auto; min-height: 120px; line-height: 1.5;">
                     <div style="display: flex; gap: 8px; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px;">
                         <span style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></span>
                         <span style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></span>
@@ -307,8 +307,7 @@
             margin: 0.1
         });
 
-        function runTypingEffect(slide) {
-            const terminalEl = slide.querySelector('#terminal-text');
+        function runTypingEffect(terminalEl) {
             if(terminalEl) {
                 const text = "A Software Engineer who turns ambitious, complex concepts into production-ready, intelligent solutions.";
                 terminalEl.innerHTML = '';
@@ -328,8 +327,30 @@
             }
         }
         
-        Reveal.on('slidechanged', event => runTypingEffect(event.currentSlide));
-        Reveal.on('ready', event => runTypingEffect(event.currentSlide));
+        Reveal.on('fragmentshown', event => {
+            if (event.fragment.id === 'terminal-window') {
+                const terminalEl = event.fragment.querySelector('#terminal-text');
+                runTypingEffect(terminalEl);
+            }
+        });
+
+        Reveal.on('slidechanged', event => {
+            const lastTerminalText = event.previousSlide ? event.previousSlide.querySelector('#terminal-text') : null;
+            if (lastTerminalText) {
+                lastTerminalText.innerHTML = '';
+                if (window.typingTimeout) clearTimeout(window.typingTimeout);
+            }
+        });
+
+        Reveal.on('fragmenthidden', event => {
+            if (event.fragment.id === 'terminal-window') {
+                const terminalEl = event.fragment.querySelector('#terminal-text');
+                if (terminalEl) {
+                    terminalEl.innerHTML = '';
+                }
+                if (window.typingTimeout) clearTimeout(window.typingTimeout);
+            }
+        });
     </script>
 </body>
 </html>
