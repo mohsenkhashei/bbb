@@ -241,18 +241,6 @@ In a Web3 model, your wallet is your identity. Your assets move with you. No pla
 
 Your wallet becomes something like a universal passport for the internet — your login, your ownership record, your identity, all in one.
 
-### DAOs
-
-One more concept in this section worth understanding: **DAOs — Decentralized Autonomous Organizations**.
-
-A DAO is a group of people organized around a shared goal, where the rules of how decisions are made are written in smart contracts — not in a company charter, not enforced by managers.
-
-Token holders vote on proposals. The outcomes are automatically executed on-chain. No CEO. No board of directors. Governance by code.
-
-MakerDAO runs one of the largest stablecoins in crypto, entirely through DAO governance. Uniswap — the exchange I mentioned earlier — is also governed as a DAO. Token holders vote on changes to the protocol.
-
-It's a genuinely new model for human coordination.
-
 ### The Honest Counterpoint
 
 I want to be balanced here, because I think intellectual honesty matters in this space.

@@ -130,18 +130,12 @@ On blockchain, you can do this with money, property, votes, and more.
 |-----|----------------|---------|
 | **Web1** | Read-only internet | Static websites |
 | **Web2** | Read + write, but companies own your data | Facebook, Google, YouTube |
-| **Web3** | Read + write + **own** | Wallets, DApps, DAOs |
+| **Web3** | Read + write + **own** | Wallets, DApps |
 
 ### The Ownership Economy
 - In Web2: you create content, the platform profits
 - In Web3: users own their data, identity, and digital assets
 - Your wallet = your universal login and ownership record
-
-### DAOs — Organizations Run by Code
-- **Decentralized Autonomous Organization**
-- Decisions made by token holders voting on-chain
-- No CEO, no board — governance written in smart contracts
-- Examples: MakerDAO (runs a stablecoin), Uniswap DAO (controls the protocol)
 
 ### Honest Counterpoint
 - Centralization is creeping back in
